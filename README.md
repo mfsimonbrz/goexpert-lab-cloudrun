@@ -20,4 +20,4 @@ Objetivo: Desenvolver um sistema em Go que receba um CEP, identifica a cidade e 
 
 **Utilização**:
 
-    Exemplo de url de consulta: `https://pos-go-expert-marcos-simon-499686807910.us-central1.run.app/88372744`.
+    Exemplo de url de consulta: https://pos-go-expert-marcos-simon-499686807910.us-central1.run.app/88372744.
