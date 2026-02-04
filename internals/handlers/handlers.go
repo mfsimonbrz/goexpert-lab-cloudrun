@@ -31,7 +31,7 @@ func (wi *WeatherInfo) TemperatureHandler(w http.ResponseWriter, r *http.Request
 
 	endereco, err := wi.businessInfo.GetAddressInformation(zipCode)
 	if err != nil {
-		message, _ := utils.BuildJsonMessage(fmt.Sprintf("Can not find zip code: %s", err.Error()))
+		message, _ := utils.BuildJsonMessage("can not find zipcode")
 		w.Header().Add("Content-Type", "application/json")
 		w.WriteHeader(http.StatusNotFound)
 		w.Write(message)

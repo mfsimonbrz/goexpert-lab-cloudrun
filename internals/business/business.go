@@ -66,5 +66,9 @@ func (b *BusinessInfo) GetAddressInformation(zipCode string) (*models.Endereco, 
 	var endereco models.Endereco
 	json.Unmarshal(bodyBytes, &endereco)
 
+	if endereco.CEP == "" {
+		return nil, fmt.Errorf("zip code %s cannot be found", zipCode)
+	}
+
 	return &endereco, nil
 }
